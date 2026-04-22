@@ -5,3 +5,5 @@ __pycache__/
 data/
 app_shipping_backup.py
 .streamlit/secrets.toml
+
+assets/*.mp4
