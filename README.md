@@ -1,5 +1,14 @@
 # French Homework App 🇫🇷
 
+<<<<<<< HEAD
+=======
+## Screenshots
+
+### Lesson History
+![Lesson History](assets/lesson-history.png)
+
+
+>>>>>>> 7cffeae (Add README screenshots)
 A Streamlit app that turns uploaded French homework `.docx` files into structured study material.
 
 ---
