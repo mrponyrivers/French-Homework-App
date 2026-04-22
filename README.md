@@ -1,15 +1,16 @@
 # French Homework App 🇫🇷
 
-<<<<<<< HEAD
-=======
-## Screenshots
+**Live App:** [french-homework-app-mrponyrivers.streamlit.app](https://french-homework-app-mrponyrivers.streamlit.app/)  
+**GitHub Repo:** [mrponyrivers / French-Homework-App](https://github.com/mrponyrivers/French-Homework-App)  
+**Demo Video:** [Watch on YouTube](https://youtu.be/Ut5uSW3ZgXI)
 
-### Lesson History
-![Lesson History](assets/lesson-history.png)
+A Streamlit app that turns uploaded French homework `.docx` files into structured study tools.
 
+---
 
->>>>>>> 7cffeae (Add README screenshots)
-A Streamlit app that turns uploaded French homework `.docx` files into structured study material.
+## Demo
+
+[![French Homework App Demo](assets/french-app-demo.gif)](https://youtu.be/Ut5uSW3ZgXI)
 
 ---
 
@@ -21,7 +22,8 @@ This project helps turn French homework documents into:
 - extracted exercises
 - vocabulary study material
 - flashcards
-- quiz modes
+- vocabulary quiz mode
+- exercise quiz mode
 - exercise practice
 
 It is designed to work with both:
@@ -33,13 +35,13 @@ It is designed to work with both:
 
 ## Features
 
-- Upload `.docx` French homework files
+- Upload French homework `.docx` files
 - Extract lesson text
 - Extract Word tables
-- Save lessons to SQLite
+- Save lessons locally
 - Parse fill-in-the-blank exercises
 - Detect answers written in parentheses
-- Read section instructions for grouped exercises
+- Carry section instructions into grouped exercises
 - Support vocabulary-based flashcards
 - Support vocabulary quiz mode
 - Support exercise quiz mode
@@ -49,7 +51,7 @@ It is designed to work with both:
 
 ---
 
-## Example supported formats
+## Example Supported Formats
 
 ### Vocabulary table lessons
 
@@ -66,6 +68,10 @@ _ suis etudiant. (Je)
 _t’appelles comment? (Tu)
 _est mon frere. (Il)
 _est ma soeur. (Elle)
+```
+
+---
+
 ## Tech Stack
 
 - Python
@@ -73,3 +79,94 @@ _est ma soeur. (Elle)
 - SQLite
 - python-docx
 - pandas
+- lxml
+
+---
+
+## How It Works
+
+1. Upload a French homework `.docx` file
+2. The app extracts lesson text, exercises, and vocabulary
+3. Lessons are saved for review in Lesson History
+4. Vocabulary items can be studied with flashcards and quiz mode
+5. Fill-in-the-blank exercises can be practiced in Exercise Practice and Exercise Quiz
+
+---
+
+## Run Locally
+
+### 1. Create and activate a virtual environment
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+### 2. Install dependencies
+
+```bash
+python3 -m pip install -r requirements.txt
+```
+
+### 3. Run the app
+
+```bash
+python3 -m streamlit run app.py
+```
+
+---
+
+## Project Structure
+
+```text
+french-homework-app/
+├── app.py
+├── README.md
+├── requirements.txt
+├── assets/
+├── modules/
+│   ├── db.py
+│   ├── parser.py
+│   ├── quiz.py
+│   ├── storage.py
+│   └── utils.py
+```
+
+---
+
+## Why I Built This
+
+I built this project to practice turning messy real-world documents into structured study workflows.
+
+This app helped me work on:
+
+- parsing document content
+- handling edge cases in homework formatting
+- organizing extracted data into study tools
+- building a usable Streamlit interface
+- managing local app storage with SQLite
+
+---
+
+## Future Improvements
+
+- stronger vocabulary extraction from non-table lessons
+- lesson tagging and categories
+- progress tracking
+- multiple-choice quiz mode
+- review history and scoring improvements
+
+---
+
+## Links
+
+- **Live App:** [french-homework-app-mrponyrivers.streamlit.app](https://french-homework-app-mrponyrivers.streamlit.app/)
+- **GitHub Repo:** [mrponyrivers / French-Homework-App](https://github.com/mrponyrivers/French-Homework-App)
+- **YouTube Demo:** [Watch here](https://youtu.be/Ut5uSW3ZgXI)
+
+---
+
+## Author
+
+Built by **Pony Rivers**  
+GitHub: [mrponyrivers](https://github.com/mrponyrivers)
